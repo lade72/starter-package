@@ -1,0 +1,26 @@
+/* Lists */
+ul {
+
+    &.pagination {
+        border: 1px solid @border-color;
+        display: flex;
+        list-style: none;
+        flex-wrap: nowrap;
+
+        li {
+            border-right: 1px solid @border-color;
+            padding: @space;
+            text-align: center;
+            width: 100%;
+
+            &:last-child {
+                border: none;
+            }
+
+            &.active {
+                background-color: @first-main-color;
+                color: white;
+            }
+        }
+    }
+}
