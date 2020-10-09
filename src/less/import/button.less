@@ -1,0 +1,32 @@
+/* Button */
+button, .button {
+    background-color: @button-color-default;
+    border: 1px solid @button-color-default;
+    color: white;
+    font-size: @font-size;
+    padding: @space;
+
+    &:hover {
+        background-color: white;
+        color: @button-color-default;
+        cursor: pointer;
+    }
+
+    &.disable {
+        background-color: @button-color-disable;
+        pointer-events: none;
+        opacity: 50%;
+        border: 1px solid @button-color-disable;
+    }
+
+    &.attention {
+        background-color: @button-color-attention;
+        border: 1px solid @button-color-attention;
+
+        &:hover {
+            background-color: white;
+            color: @button-color-attention;
+            cursor: pointer;
+        }
+    }
+}
