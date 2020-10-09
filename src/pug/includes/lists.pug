@@ -1,10 +1,23 @@
 section
-    h2 Listen
-    h3 Aufzählung
+    h2 List
+    h3 Unordered list with disc
     ul
         each val in [1, 2, 3, 4]
             li= 'List-Item ' + val
-    h3 Pagination
-    ul.pagination
-        each val in ['<', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, '>']
-            li= val
+    h3 Unordered list without disc
+    ul.no-disc
+        each val in [1, 2, 3, 4]
+            li= 'List-Item ' + val
+    h3 Ordered list
+    ol
+        each val in [1, 2, 3, 4]
+            li= 'List-Item ' + val
+    h3 Defintion list
+    dl
+        dt Part 1
+        dd Item 1.1
+        dd Item 1.2
+        dd Item 1.3
+        dt Part 2
+        dd Item 2.1
+        dd Item 2.2

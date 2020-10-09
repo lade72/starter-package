@@ -1,29 +1,22 @@
 /* Lists */
-ul {
-    list-style: disc;
-    list-style-position: inside;
+ul, ol {
     margin-bottom: @line-height;
+    list-style-position: inside;
 
     &.no-disc {
         list-style: none;
 
     }
+}
 
-    &.pagination {
-        border: 1px solid @border-color;
-        display: flex;
-        list-style: none;
-        flex-wrap: nowrap;
+dl {
+    margin-bottom: @line-height;
 
-        li {
-            border-right: 1px solid @border-color;
-            padding: @space;
-            text-align: center;
-            width: 100%;
+    dt {
+        font-weight: 600;
+    }
 
-            &:last-child {
-                border: none;
-            }
-        }
+    dd + dt {
+        margin-top: @line-height;
     }
 }
