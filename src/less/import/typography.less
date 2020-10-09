@@ -4,11 +4,19 @@ body {
     font-size: @font-size;
     font-weight: @font-weight;
     line-height: @line-height;
+    color: @font-color;
 }
+
 // Headlines
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: @headline-font-weight;
-    line-height: @headline-line-height;
+    line-height: 100%;
+    margin-bottom: @headline-margin-bottom;
 }
 
 h1 {
@@ -34,7 +42,42 @@ h5 {
 h5 {
     font-size: @h5-font-size;
 }
+
 // Paragraphs
 p {
     margin: 0 0 @paragraph-margin-after 0;
+
+    &+h1 {
+        margin-top: @line-height;
+    }
+
+    &+h2 {
+        margin-top: @line-height;
+    }
+
+    &+h3 {
+        margin-top: @line-height;
+    }
+
+    &+h4 {
+        margin-top: @line-height;
+    }
+
+    &+h5 {
+        margin-top: @line-height;
+    }
+
+    &+h6 {
+        margin-top: @line-height;
+    }
+}
+
+a {
+    color: @first-main-color;
+
+    &:hover {
+        color: white;
+        background-color: @first-main-color;
+        text-decoration: none;
+    }
 }
