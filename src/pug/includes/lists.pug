@@ -1,0 +1,10 @@
+section
+    h2 Listen
+    h3 Aufzählung
+    ul
+        each val in [1, 2, 3, 4]
+            li= 'List-Item ' + val
+    h3 Pagination
+    ul.pagination
+        each val in ['<', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, '>']
+            li= val
