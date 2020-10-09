@@ -1,0 +1,12 @@
+{
+  "name": "box_menu",
+  "version": "0.0.1",
+  "dependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-pug": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}

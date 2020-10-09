@@ -1,0 +1,29 @@
+/* Lists */
+ul {
+    list-style: disc;
+    list-style-position: inside;
+    margin-bottom: @line-height;
+
+    &.no-disc {
+        list-style: none;
+
+    }
+
+    &.pagination {
+        border: 1px solid @border-color;
+        display: flex;
+        list-style: none;
+        flex-wrap: nowrap;
+
+        li {
+            border-right: 1px solid @border-color;
+            padding: @space;
+            text-align: center;
+            width: 100%;
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+}

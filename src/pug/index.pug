@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/styles.css")
+        title Shop Template
+    body
+        main
+            h1 Typography
+            section
+                h2 Überschriften
+                    h1 Headline 1
+                    h2 Headline 2
+                    h3 Headline 3
+                    h4 Headline 4
+                    h5 Headline 5
+                    h6 Headline 6
+            section
+                article
+                    h2 Absatz und Verlinkung
+                    p Lorem ipsum 
+                        a(href='https://www.ladengast.de', traget='_blank', title='Link zu') dolor sit amet
+                        | , consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    h3 Header 3
+                    p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            section
+                h2 Listen
+                h3 Aufzählung
+                ul
+                    each val in [1, 2, 3, 4]
+                        li= 'List-Item ' + val
+                h3 Pagination
+                ul.pagination
+                    each val in ['<', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, '>']
+                        li= val
+            section
+                h2 Tabelle
+                table
+                    thead
+                        tr
+                            th Head 1
+                            th Head 2
+                            th Head 3
+                    tbody
+                        tr
+                            td Body 1
+                            td Body 2
+                            td Body 3
+                        tr
+                            td Body 1
+                            td Body 2
+                            td Body 3
+                    tfoot
+                        tr
+                            td(colspan= 3) Footer
+            section
+                h2 Button
+                ul.no-disc
+                    li
+                        button(type= 'button') Test
+            section
+                h2 Bild und Bildunterschrift
+                figure
+                    img(src='https://www.brama-west.de/images/product_images/original_images/345105_01_maske_ffp2_ventil.jpg', alt='Altenativ Text', width= '100px')
+                    figcaption Bildunterschrift
+            section
+                h2 Eingabefelder
+                form(action="")
+                    fieldset
+                        legend Person
+                        ul.no-disc
+                            li
+                                input(type='text', id='firstname', name='firstname', placeholder='Vorname')
+                            li
+                                input(type='text', id='lastname', name='lastname', placeholder='Nachname')
+                            li
+                                input(type='submit', value='Submit')
+            footer
+                p Ladengast &copy; 2020
