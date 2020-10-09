@@ -1,12 +1,19 @@
 section
-    h2 Eingabefelder
+    h2 Input
     form(action="")
         fieldset
             legend Person
             ul.no-disc
                 li
-                    input(type='text', id='firstname', name='firstname', placeholder='Vorname')
+                    input(type='text', id='firstname', name='firstname', placeholder='First Name')
                 li
-                    input(type='text', id='lastname', name='lastname', placeholder='Nachname')
+                    input(type='text', id='lastname', name='lastname', placeholder='Last Name')
+            legend Address
+            ul.no-disc
                 li
-                    input(type='submit', value='Submit')
+                    input(type='text', id='street', name='street', placeholder='Street')
+                li
+                    input(type='text', id='city', name='city', placeholder='City')
+            ul.no-disc
+                li
+                    input.button(type='submit', value='Submit')
